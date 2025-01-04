@@ -1,0 +1,1 @@
+tellraw @s {"text":f"[Loaded lucky_block v{ctx.project_version}]","color":"green"}

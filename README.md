@@ -1,6 +1,6 @@
-# WeldDeps Template
+# WeldDeps lucky_block
 
-This readme will show you how to use the WeldDeps template to create a new datapack project.
+This readme will show you how to use the WeldDeps lucky_block to create a new datapack project.
 
 
 ## Getting Started

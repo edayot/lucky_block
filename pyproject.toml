@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "template"
+name = "lucky_block"
 version = "0.1.0"
 description = ""
 authors = ["edayot <pro.e.dayot@gmail.com>"]
@@ -16,13 +16,11 @@ python-semantic-release = "^8.7.0"
 
 [tool.beet.meta.simple_item_plugin]
 custom_model_data = 1430000
-generate_guide = true
-
-[tool.beet.meta.model_merging]
-predicate_order = ["custom_model_data", "pulling", "pull", "charged", "firework"]
+generate_guide = false
 
 [tool.beet.meta.weld_deps.deps]
-"itemio" = "1.2.6"
+"custom_block_ext" = "0.2.0"
+
 
 
 [tool.semantic_release]
@@ -57,7 +55,7 @@ output = "build"
 
 pipeline = [
     "simple_item_plugin",
-    "template",
+    "lucky_block",
 ]
 require=[
     "bolt",
@@ -82,17 +80,17 @@ load = "src"
 [tool.beet.meta]
 mc_supports = ["1.21"]
 minecraft_version = "1.21"
-modrinth_id = "template"
+modrinth_id = "lucky_block"
 
 [tool.beet.meta.mecha]
 multiline = true
-match = ["template:**"]
+match = ["lucky_block:**"]
 
 
 [tool.beet.meta.model_resolver]
 render_size = 256
 load_vanilla = true
-save_namespace = "template"
+save_namespace = "lucky_block"
 
 
 
