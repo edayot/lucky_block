@@ -17,6 +17,7 @@ python-semantic-release = "^8.7.0"
 [tool.beet.meta.simple_item_plugin]
 custom_model_data = 1430000
 generate_guide = false
+item_for_pack_png = "lucky_block"
 
 [tool.beet.meta.weld_deps.deps]
 "custom_block_ext" = "0.2.0"
